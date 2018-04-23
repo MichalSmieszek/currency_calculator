@@ -10,24 +10,21 @@ public class Salary {
 
     Salary(){
     }
-    // Obliczamy pensje z algorytmu z maila  i zaokrąglamy do dwóch miejsc po kropce.
-    public double polishMoney(double dailyMoney){
-        double salary;
-        salary=(dailyMoney*22-1200)*0.81;
+
+    public String polishMoney(double dailyMoney){
+        double salary=(dailyMoney*22-1200)*0.81;
         salary=((double)(round(100*salary)))/100;
-        return (salary);
+        return (Double.toString(salary));
     }
-    public double germanMoney(double dailyMoney){
-        double salary;
-        salary=(dailyMoney*22-800)*0.8*currency.getCurrency("EUR");
+    public String germanMoney(double dailyMoney){
+        double salary=(dailyMoney*22-800)*0.8*currency.getCurrency("EUR");
         salary=((double)(round(100*salary)))/100;
-        return(salary);
+        return(Double.toString(salary));
     }
-    public double britishMoney(double dailyMoney){
-        double salary;
-        salary=(dailyMoney*22-600)*0.75*currency.getCurrency("GBP");
+    public String britishMoney(double dailyMoney){
+        double salary=(dailyMoney*22-600)*0.75*currency.getCurrency("GBP");
         salary=((double)(round(100*salary)))/100;
-        return(salary);
+        return(Double.toString(salary));
     }
 
 }
