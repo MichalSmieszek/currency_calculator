@@ -11,18 +11,18 @@ public class Salary {
     Salary(){
     }
 
-    public String polishMoney(double dailyMoney){
-        double salary=(dailyMoney*22-1200)*0.81;
+    public String polishMoney(double dailyPLN){
+        double salary=(dailyPLN*22-1200)*0.81;
         salary=((double)(round(100*salary)))/100;
         return (Double.toString(salary));
     }
-    public String germanMoney(double dailyMoney){
-        double salary=(dailyMoney*22-800)*0.8*currency.getCurrency("EUR");
+    public String germanMoney(double dailyEUR){
+        double salary=(dailyEUR*22-800)*0.8*currency.getCurrency("EUR");
         salary=((double)(round(100*salary)))/100;
         return(Double.toString(salary));
     }
-    public String britishMoney(double dailyMoney){
-        double salary=(dailyMoney*22-600)*0.75*currency.getCurrency("GBP");
+    public String britishMoney(double dailyGBP){
+        double salary=(dailyGBP*22-600)*0.75*currency.getCurrency("GBP");
         salary=((double)(round(100*salary)))/100;
         return(Double.toString(salary));
     }
