@@ -1,6 +1,6 @@
 # currency_calculator
 
-This project was written in java and spring boot. I count monthly net salary in PLN from daily gros salary in optional currencies. < br />
+This project was written in java and spring boot. I count monthly net salary in PLN from daily gros salary in optional currencies. 
 
 In project I found two problems. At first I don't know, how i can test value of currency, unit test probably isn't a good option, because currencies changes. <br />
 
