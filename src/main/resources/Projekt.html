@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang = "pl">
+<head>
+	<meta charset ="utf-8">
+	<title> Przelicznik walut </title>
+	
+
+</head>
+
+<body>
+<input type = "double" id= "number" >
+<input type ="submit" value="Przelicz na PLN" onclick="policzPLN()">
+<div id="result"></div>
+</body>
+
+<script>
+function policzPLN(){
+	let inputField = document.getElementById('number');
+	let resultField = document.getElementById('result');
+	fetch('http://localhost:8887/polish?money=' + inputField.value)
+            .then(res => console.log(res))
+        }
+
+</script>
+</html>
